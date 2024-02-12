@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  background-color:#301934;
+}
+header {
+  background-color: #FFB7C5;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: #6B142C;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  background-color: #FFB7C5;
+  font-family: Josefin Sans;
+  padding: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+header p {
+  display: inline-block;
+}
+
+header img {
+  max-height: 100px;
+}
+.heroImg {
+  background-color: #301934;
+  padding: 100px 15px;
+}
+
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFB7C5;
+  text-align: center;
+  border-radius: 15px;
+  font-family: Poppins;
+}
+
+.mySkills p {
+  font-family: Poppins;
+  color: white;
+}
+
+.mySkills h1, .mySkills h3 {
+  font-family: Josefin Sans;
+  color: #FFB7C5;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding: 5px;
+  margin: auto;
+}
+
+.myWork p {
+  font-family: Poppins;
+  color: white;
+}
+
+.myWork h1, .myWork h4, .myWork h3 {
+  font-family: Josefin Sans;
+  color: #FFB7C5;
+  text-align: center;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  padding: 25px;
+  margin: auto;
+  } 
+
+.workHeading {
+  grid-area:  1 / 3 / 2 / 5;
+  margin-top: 75px;
+}
+
+.project1Pic {
+  grid-area:  2 / 1 / 4 / 4;
+  align-content: start;
+  justify-content: center;
+  align-self: start;
+  margin-left: 75px;
+  margin-top: 30px;
+  max-width: 500px;
+  max-height: auto;
+}
+
+.project1 { 
+  grid-area: 4 / 1 / 6 / 4;
+  justify-content: center;
+}
+
+.project2Pic { 
+  align-self: start;
+  grid-area:  2 / 4 / 4 / 7;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+.project2 { 
+  grid-area:  4 / 4 / 6 / 7; 
+ justify-content: center;
+}
+
+.project1Pic img {
+  height: 350px;
+  width: auto;
+  padding-top: 50px;
+}
+
+.project2Pic img {
+  height: 500px;
+  width: auto;
+  align-self: center;
+  text-align: center;
+  margin-left: 150px;
+}
+
+button {
+  padding: 15px;
+  background-color: #FFB7C5;
+  color: #301934;
+  font-size: 15px;
+  border-radius: 15px;
+  border-color: #301934;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #C9A0DC;
+  padding: 5px;
+  color: #301934;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+  font-family: Josefin Sans;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+  header {
+    max-width: 350px;
+    max-height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  header img {
+    width: 305px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+.mySkills h1 {
+  text-align: center;
+}
+
+.flexContainer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90;
+}
+
+.flexContainer div {
+  width: 90%;
+  align-content: center;
+  justify-content: center;
+}
+  .workGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "workHeading"
+    "project1Pic"
+    "project1"
+    "project2Pic"
+    "project2";
+  align-items: center;
+  justify-content: center;
+  }
+
+  .workHeading {
+    grid-area: workHeading;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project1Pic {
+    grid-area: project1Pic;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .project1 {
+    grid-area: project1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project2Pic {
+    grid-area: project2Pic;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .project2 {
+    grid-area: project2;
+    align-items: center;
+    justify-content: center;
+  }
+
+.project1Pic img {
+  width: 250px;
+  height: auto;
+}
+
+.project2Pic img {
+  height: 300px;
+  width: auto;
+  margin: auto;
+}
+}
